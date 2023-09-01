@@ -1,0 +1,37 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    
+}
+header>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+h1{
+    line-height: 2em;
+    animation: typewriter 5s steps(40, end);
+}
+
+img{
+    align-self: flex-end;
+    width:20%;
+    height: 20%;
+    border: 0.5em solid #EC53B0 ;
+    border-radius: 50%;
+}
+
+@keyframes typewriter{
+    from {width:0;}
+  to {width: 100%;}
+}
+
+p{
+    background-color: #EC53B0;
+   text-align: center;
+   color: whitesmoke;
+    padding:1rem;
+}
