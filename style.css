@@ -4,22 +4,44 @@ html,body{
     background-color: whitesmoke;
     
 }
-header>div{
+#header{
+    /* height: 100vh; */
+
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+
+}
+#main{
+    /* display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    padding: 2rem; */
+    display: flex;
+    
+    flex-direction: row;
+    
+    align-items: center;
     
 }
-h1{
+#introHeading{
     line-height: 2em;
     animation: typewriter 5s steps(40, end);
+    align-self: flex-start;
 }
 
-img{
-    align-self: flex-end;
-    width:20%;
-    height: 20%;
+
+
+#profilePic{
+    align-self: first baseline;
+    width:30%;
+    height: 50%;
     border: 0.5em solid #EC53B0 ;
     border-radius: 50%;
 }
@@ -29,9 +51,63 @@ img{
   to {width: 100%;}
 }
 
-p{
+/* #findMoreClick{
+    padding:1rem;
+    margin: 1rem;
+    text-decoration: none;
+   display: inline-block;
+   justify-content: center;
+  align-content: center;
     background-color: #EC53B0;
    text-align: center;
    color: whitesmoke;
+   
+} */
+
+#background{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#backgroundMain{
+    display: flex;
+    
+    flex-direction: row;
+    flex-grow: 1 1;
+    align-items: center;
+    
+}
+
+#backgroundTitle{
+   padding: 1rem;
+   margin: 1rem;
+   
+}
+
+#backgroundDescription{
+    padding: 1rem;
+    margin: 1rem;
+   
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 1em;
+    word-spacing: 0.1em;
+   
+  
+
+}
+
+#moreButton{
     padding:1rem;
+    margin: 2rem;
+    text-decoration: none;
+    align-self: flex-end;
+  
+ 
+    background-color: #EC53B0;
+   text-align: center;
+   color: whitesmoke;
+   
 }
